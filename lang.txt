@@ -1,0 +1,107 @@
+
+array:
+	[ ... ]					create array
+	size | array | array			create empty array
+	array | length | int			get length of array
+	array index get | value			get element from array
+	array index value | put | -		set element of array	
+	array proc | forall | -			run proc for every element of array
+	[ cond then-proc ... else-proc ] | case | -	conditional
+
+func:
+	val | pop | -				remove top element from stack
+	val | dup | val val			duplicate top element on stack
+	v1 v2 | exch | v1 v2			swap top 2 elements on stack
+	| clear |				remove all elements from stack
+	index | index | value			get the element the specified distance from the top of stack
+	nelem npos | roll | ...			roll top nelem elements on stack by npos
+	sym val | def | -			define symbol as value
+	val | print | -				print value
+	val | = | -				print value
+	val | == | -				print value
+	| pstack |				print contents of stack
+	proc | exec | -				execute procedure
+	cond proc | if | -			execute procedure if cond is true
+	cond thn-proc else-proc | ifelse | -	execute then or else procedure
+	proc | loop | -				execute proc repeatedly
+	count proc | repeat | -			execute proc specfied number of times
+	initial increment maximum proc | for | -	execute proc specfied number of times
+	| break |				exit a loop
+	| undef | undef				push undefined value on to stack
+	string | eval | -			compile + run code contained in string
+	proc | bind | proc			
+	executive
+
+imgf:
+	width
+	height
+	depth
+	x
+	y
+	r
+	g
+	b
+	a
+	R
+	G
+	B
+	A
+	gamma
+	dist
+	rgbdist
+	yuvdist
+	rgb2hsv
+	hsv2rgb
+	rgb2yuv
+	yuv2rgb
+	rgb2ymp
+	ymp2rgb
+
+math:
+	add
+	sub
+	mul
+	div
+	lt
+	le
+	gt
+	ge
+	eq
+	ne
+	idiv
+	imod
+	and
+	or
+	not
+	bitand
+	bitor
+	bitxor
+	bitnot
+	shl
+	shr
+	neg
+	sqrt
+	cbrt
+	sin
+	cos
+	tan
+	asin
+	acos
+	atan
+	sinh
+	cosh
+	tanh
+	asinh
+	acosh
+	atanh
+	floor
+	ceil
+	exp
+	log
+	rint
+	fabs
+	pow
+	atan2
+	hypot
+
+

@@ -1,0 +1,9 @@
+# comment
+INIT {
+  X == Y ==
+  /scale 255 128 div def
+}
+
+b g r scale div 64 add
+
+

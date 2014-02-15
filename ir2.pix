@@ -1,0 +1,14 @@
+
+r 0 eq {
+	b g r
+} {
+	b 2   div b r div 128 mul add 1.65 mul
+	g 2   div g r div 128 mul add 1.7 mul
+	r
+} ifelse
+
+rgb2hsv
+exch .5 pow exch
+3 -1 roll 30 sub 3 1 roll
+hsv2rgb
+
